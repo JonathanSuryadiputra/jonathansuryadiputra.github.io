@@ -1,0 +1,166 @@
+/* general css */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.sidepanel a:hover {
+    color: #f0f0f0;
+}
+.sidepanel a:active {
+    color: #e3e3e3;
+}
+a:hover div {
+    color: #f0f0f0;
+}
+a:active div {
+    color: #e3e3e3;
+}
+a:visited {
+    color: inherit;
+}
+.credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 25px;
+}
+/* desktop css */
+.appbar {
+    display: none;
+}
+.profilepic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.sidepanel {
+    background-color: teal;
+    color: white;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainpanel {
+    margin-left: 25%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    color: gray;
+    width: 75%;
+}
+.childpanel {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.contentpanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.contentpic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.contentdesc {
+    width: 50%;
+}
+.contentdesc p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+}
+.aboutme {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+}
+.artwork {
+    border-radius: 10px;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+/* mobile css */
+@media only screen and (max-width: 800px) {
+    .sidepanel {
+        display: none;
+    }
+    .appbar {
+        position: fixed;
+        display: flex;
+        top: 0;
+        width: 100%;
+        height: 10%;
+        background-color: teal;
+        padding: 5px;
+        z-index: 1;
+    }
+    .appbar button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 24px;
+    }
+    .navpanel {
+        position: fixed;
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+        background-color: teal;
+        color: white;
+    }
+    .navpanel a:hover {
+        color: #f0f0f0;
+    }
+    .navpanel a:active {
+        color: #e3e3e3;
+    }
+    .mainpanel {
+        z-index: -1;
+        margin: 0px;
+        padding-top: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 90%;
+        width: 100%;
+    }
+    .contentpanel {
+        display: flex;
+        flex-direction: column;
+    }
+    .contentpic {
+        width: 100%;
+    }
+    .contentdesc {
+        width: 100%;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
